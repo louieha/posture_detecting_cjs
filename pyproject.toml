@@ -1,0 +1,54 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "posture_guardian"
+version = "0.1.0"
+description = "자세 교정 유도 장치"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+]
+packages = [{include = "posture_guardian"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<3.12"
+opencv-python = "^4.9.0"
+mediapipe = "^0.10.9"
+pyserial = "^3.5"
+numpy = "^1.26.4"
+streamlit = "^1.32.0"
+pydantic = "^2.5.2"
+toml = "^0.10.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.1"
+black = "^23.7.0"
+isort = "^5.12.0"
+mypy = "^1.5.1"
+
+[tool.poetry.scripts]
+posture_guardian = "posture_guardian.main:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true 

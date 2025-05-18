@@ -1,0 +1,6 @@
+#!/Users/louie/Desktop/종설프과제/posture_detecting_cjs/venv_new/bin/python
+import sys
+from posture_guardian.main import main
+
+if __name__ == '__main__':
+    sys.exit(main())

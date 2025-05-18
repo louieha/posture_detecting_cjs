@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environment
+venv/
+ENV/
+venv_new/lib/
+venv_new/Lib/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+posture_guardian.log
+
+# 가상환경 설정 스크립트 (로컬 환경에 맞게 생성됨)
+set_pythonpath.sh
+set_pythonpath.bat 

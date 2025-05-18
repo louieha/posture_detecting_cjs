@@ -1,0 +1,43 @@
+# 자세 교정 유도 장치 설정 파일
+
+app_name = "자세 교정 유도 장치"
+version = "0.1.0"
+debug = false
+
+# 센서 설정
+[sensors]
+# 아두이노 연결 여부: true = 실제 연결, false = 시뮬레이션
+arduino_connection = false
+
+# 웹캠 장치 ID (일반적으로 0이 기본 웹캠)
+webcam_device_id = 0
+
+# 시뮬레이션 설정 (arduino_connection = false 일 때 사용)
+simulation_foot_mean = 500    # 발받침대 압력 평균값 (1-1024)
+simulation_foot_std = 30      # 발받침대 압력 표준편차
+simulation_cushion_mean = 500 # 방석 압력 평균값 (1-1024)
+simulation_cushion_std = 30   # 방석 압력 표준편차
+
+# 처리 설정
+[processing]
+# 임계값 설정
+eye_distance_threshold = 0.1  # 눈 거리 비율 임계값
+pressure_threshold = 200      # 압력 임계값
+
+# 체크 간격 설정 (초)
+check_interval_min = 2        # 최소 체크 간격
+check_interval_max = 10       # 최대 체크 간격
+
+# 보정 시간 (초)
+calibration_time = 3          # 초기 보정 시간
+
+# UI 설정
+[ui]
+# Streamlit 포트 번호
+streamlit_port = 8501
+
+# 테마 색상
+theme_color = "#ff4b4b"
+
+# 알림음 파일 경로 (없으면 시스템 기본음 사용)
+alert_sound_path = "" 
