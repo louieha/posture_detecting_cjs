@@ -3,6 +3,11 @@
 웹캠과 발판·방석 압력센서를 이용해 **올바른 자세**를 지켜주는 학습용 프로젝트입니다.  
 코드는 Streamlit(front-end) + 파이썬 모듈화(back-end) 구조이며, 센서가 없더라도 **시뮬레이션 모드**로 바로 실행해 볼 수 있습니다.
 
+# ✅ 정책 문서 
+👉 https://www.notion.so/takeeateasylouie1973/1f7ce47f8bdd80cbae37fb2881e0be7f?pvs=4
+
+
+
 ---
 ## 1. 개발 환경 세팅 ‑ 상세
 ```bash
